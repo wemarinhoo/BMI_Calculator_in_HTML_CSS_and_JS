@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="BMI_Calculator.css">
+  <link rel="icon" href="weight.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  
+  <main class="container_img">
+    <img src="undraw_healthy_lifestyle_re_ifwg.svg" alt="">
+  </main>
+
+  <main class="container_form" id = "form_calculator">
+    <form class="calculator" id = "calculator">
+       <div class="title">
+        <h2>BMI - Calculator</h2>
+       </div>
+
+       <div class="input-group">
+        <label for="weight">Enter Your Weight</label>
+        <div class="input_field">
+          <i class="fa-solid fa-weight-hanging"></i>
+         <input type="number" name="weight" id="weight" required step = "any">
+         <span>Kg</span>
+        </div>
+       </div>
+
+       <div class="input-group">
+        <label for="height">Enter Your Height</label>
+        <div class="input_field">
+          <i class="fa-solid fa-ruler"></i>
+          <input type="number" name="height" id="height" required step = "any">
+          <span>M</span>
+        </div>
+       </div>
+
+       <div class="button" id = "calculate">
+        <button>Calculate</button>
+       </div>
+
+       <div class="underline"></div>
+
+       <div class="hidden" id = "infos">
+        <div class="bmi_info">
+          <span id = "value"></span>
+          <span>Your BMI</span>
+        </div>
+
+        <div class="bmi_classification">
+          <span id = "bmi_classification"></span>
+        </div>
+       </div>
+
+      <div class="underline"></div>
+
+      <div class="bmi_link">
+        <a href="https://www.news-medical.net/health/What-is-Body-Mass-Index-(BMI).aspx" target=_blank>More
+          Information About BMI</a>
+        <i class="fa-solid fa-link"></i>
+      </div>
+
+      <script src="BMI_Calculator.js"></script>
+    </form>
+  </main>
+
+  
+</body>
+</html>

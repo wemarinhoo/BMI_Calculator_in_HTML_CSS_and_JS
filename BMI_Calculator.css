@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #31ac37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+main.container_img {
+  width: 32rem;
+  height: 33.5rem;
+  padding: 2rem;
+  background-color: #201b2c;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+main.container_img img {
+  width: 100%;
+  height: 100%;
+}
+
+main.container_form {
+  background-color: #201b2c;
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  padding: 1.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+main.container_form form.calculator {
+  width: 100%;
+  color: #f8fafc;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container_form section.calculator .title h2 {
+  color: #ffffff;
+  font-weight: 600;
+  position: relative;
+}
+
+main.container_form section.calculator .title h2:after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background-color: #31ac37;
+  border-radius: 0.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+
+.input_field {
+  background-color: #514869;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.4rem 0.8rem;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+
+.input_field input {
+  width: 100%;
+  background-color: #514869;
+  outline: none;
+  border: none;
+  padding: 0 1rem;
+  color: #f8fafc;
+  font-weight: 600;
+  font-size: 0.975rem;
+}
+
+.input_field input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.input_field span {
+  font-weight: 600;
+}
+
+.input_field:hover {
+  opacity: 0.85;
+  transition: 0.3s ease-in-out;
+}
+
+.button button {
+  width: 100%;
+  border: none;
+  padding: 0.4rem 0;
+  border-radius: 0.3rem;
+  color: #f8fafc;
+  background-color: #31ac37;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.4rem;
+}
+
+.button button:hover {
+  opacity: 0.85;
+  transition: 0.3s ease-in-out;
+}
+
+.underline {
+  width: 100%;
+  height: 3px;
+  background-color: #514869;
+  border-radius: 0.5rem;
+}
+
+#infos {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  height: 4.5rem;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.bmi_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+}
+
+#value {
+  font-size: 2rem;
+}
+
+.bmi_classification {
+  width: 15.1rem;
+}
+
+.bmi_classification span {
+  font-weight: 600;
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 0.9rem;
+}
+
+.bmi_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bmi_link a {
+  font-size: 0.875rem;
+  color: #31ac37;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.bmi_link a:hover {
+  text-decoration: underline;
+}
+
+.bmi_link i {
+  color: #31ac37;
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+}
+
+.warning{
+  color: #bf1e2e;
+}
+
+.normal{
+  color: #0b9443;
+}
+@media only screen and (min-width:320px) and (max-width:911px) {
+
+  .container_img {
+    display: none;
+  }
+
+  main.container_form {
+    border-radius: 0.5rem;
+  }
+}
