@@ -46,19 +46,19 @@ main.container_form form.calculator {
   flex-direction: column;
 }
 
-main.container_form section.calculator .title h2 {
+.title h2 {
   color: #ffffff;
   font-weight: 600;
   position: relative;
 }
 
-main.container_form section.calculator .title h2:after {
+.title h2:after {
   content: "";
   position: absolute;
   width: 5rem;
   height: 3px;
   left: 0;
-  bottom: 0;
+  bottom: 2px;
   background-color: #31ac37;
   border-radius: 0.5rem;
 }
